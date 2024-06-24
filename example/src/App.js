@@ -6,7 +6,7 @@ import {Typography} from 'hich-ui-kit'
 const App = () => {
   // return <ExampleComponent text="Create React Library Example 😄" />
   // return "aaaaaaaaaaaaaaaa"
-  return <Typography>eeeeeeee</Typography>
+  return <Typography>hte</Typography>
 }
 
 export default App
