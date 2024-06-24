@@ -1,0 +1,120 @@
+/* titles ************/
+.h-title-xxxl,
+.h-title-xxl,
+.h-title-xl,
+.h-title-l,
+.h-title-m,
+.h-title-s,
+.h-title-xs {
+  font-weight: 700;
+  letter-spacing: 0%;
+}
+.h-title-xxxl {
+  font-size: 36px;
+  line-height: 43px;
+}
+.h-title-xxl {
+  font-size: 28px;
+  line-height: 37px;
+}
+.h-title-xl {
+  font-size: 22px;
+  line-height: 26px;
+}
+.h-title-l {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: .2px;
+}
+.h-title-m {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: .2px;
+}
+.h-title-s {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: .2px;
+}
+.h-title-xs {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .3px;
+}
+
+/* body ************/
+.h-body-l,
+.h-body-m,
+.h-body-caption {
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+.h-body-l {
+  font-size: 16px;
+  line-height: 24px;
+}
+.h-body-m {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1%;
+  letter-spacing: .1px;
+}
+.h-body-caption {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: .2px;
+}
+
+/* label ************/
+.h-label-l,
+.h-label-m,
+.h-label-s,
+.h-label-xs,
+.h-label-tags {
+  font-weight: 500;
+  letter-spacing: 0%;
+}
+.h-label-l {
+  font-size: 16px;
+  line-height: 24px;
+}
+.h-label-m {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: .1px;;
+}
+.h-label-s,
+.h-label-xs,
+.h-label-tags {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: .2px;
+}
+
+/* button ************/
+.h-button-l,
+.h-button-m,
+.h-button-s,
+.h-button-xs {
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+.h-button-l {
+  font-size: 16px;
+  line-height: 16px;
+}
+.h-button-m {
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: .1px;
+}
+.h-button-s {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: .2px;
+}
+.h-button-xs {
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: .2px;
+}
