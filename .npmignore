@@ -1,0 +1,19 @@
+#the src folder
+src
+.babelrc
+.rollup.config.js
+#node modules
+noe_modules
+#git rep
+.git.gitignore
+CSV
+.svn
+.hg
+.lock-wscript
+.wafpicker-node
+.DS_Stroe
+npm-debug.log
+.npmrc
+#others
+config.gypi
+Package-lock.json
