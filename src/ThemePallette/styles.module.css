@@ -13,11 +13,11 @@
   --content-button-subtle-hover: #e0e5ed;
 
   /* surface colors ****************************/
-  --surface-primary: #f7f8fa;
+  --surface-primary: #ffffff;
   --surface-secondary: #f7f8fa;
   --surface-tertiary: #ebedf0;
   --surface-modal: #ffffff;
-  --surface-border: #e9ebf0;
+  --surface-border: #f7f8fa;
 
   /* action colors ****************************/
   --action-green: #29cc5f;
