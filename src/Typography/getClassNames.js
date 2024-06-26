@@ -1,5 +1,4 @@
-import styles from './style.module.css'
-
-const getClassNames = (variant, classes) => `${classes} ${styles[variant]}`
+const getClassNames = (variant, classes) =>
+  `${typeof classes !== typeof undefined ? classes : ''} ${variant}`
 
 export default getClassNames
