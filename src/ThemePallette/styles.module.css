@@ -1,0 +1,114 @@
+.warm-pallette {
+  /* content colors ****************************/
+  --content-primary: #3d4b66;
+  --content-primary-hover: #485570;
+  --content-secondary: #3344668c;
+  --content-disabled: #405a803f;
+  --content-subtle: #2644800f;
+  --content-invert: #ffffff;
+  --content-white: #ffffff;
+  --content-black: #3d4b66;
+  --content-hover: #7d8fb219;
+  --content-button-subtle: #f2f4f8ff;
+  --content-button-subtle-hover: #e0e5ed;
+
+  /* surface colors ****************************/
+  --surface-primary: #f7f8fa;
+  --surface-secondary: #f7f8fa;
+  --surface-tertiary: #ebedf0;
+  --surface-modal: #ffffff;
+  --surface-border: #e9ebf0;
+
+  /* action colors ****************************/
+  --action-green: #29cc5f;
+  --action-green-hover: #40c070;
+  --action-green-15: #29cc5f19;
+  --action-blue: #339cff;
+  --action-blue-15: #339cff19;
+  --action-red: #fc5858;
+  --action-red-15: #fc585819;
+  --action-yellow: #edd30e;
+  --action-yellow-15: #edd30e19;
+  --action-purple: #be55f2;
+  --action-purple-15: #be55f219;
+  --action-turquoise: #15d6c6;
+  --action-turquoise-15: #15d6c619;
+  --action-cornflower: #7377ff;
+  --action-cornflower-15: #7377ff19;
+  --action-orchid: #db58db;
+  --action-orchid-15: #db58db19;
+  --action-orange: #ff884d;
+  --action-orange-15: #ff884d19;
+  --action-lime: #bbdb1a;
+  --action-lime-15: #bbdb1a19;
+  --action-kiwi: #78e043;
+  --action-kiwi-15: #78e04319;
+  --action-sky: #13cdf2;
+  --action-sky-15: #13cdf219;
+  --action-violet: #8d67e5;
+  --action-violet-15: #8d67e519;
+  --action-pink: #eb54a0;
+  --action-pink-15: #eb54a019;
+  --action-amber: #ffbc36;
+  --action-amber-15: #ffbc3619;
+}
+
+.dark-pallette {
+  /* content colors ****************************/
+  --content-primary: #ffffff;
+  --content-primary-hover: #eceef3;
+  --content-secondary: #e5eeffa5;
+  --content-disabled: #ccddff3f;
+  --content-subtle: #80aaff1e;
+  --content-invert: #3d4b66;
+  --content-white: #ffffff;
+  --content-black: #3d4b66;
+  --content-hover: #7d8fb226;
+  --content-button-subtle: #7d8fb2;
+  --content-button-subtle-hover: #7d8fb2;
+
+  /* surface colors ****************************/
+  --surface-primary: #313742;
+  --surface-secondary: #21252e;
+  --surface-tertiary: #12141a;
+  --surface-modal: #434957;
+  --surface-border: #545a69;
+
+  /* action colors ****************************/
+  --action-green: #29cc5f;
+  --action-green-hover: #40c070;
+  --action-green-15: #29cc5f19;
+  --action-blue: #339cff;
+  --action-blue-15: #339cff19;
+  --action-red: #fc5858;
+  --action-red-15: #fc585819;
+  --action-yellow: #edd30e;
+  --action-yellow-15: #edd30e19;
+  --action-purple: #be55f2;
+  --action-purple-15: #be55f219;
+  --action-turquoise: #15d6c6;
+  --action-turquoise-15: #15d6c619;
+  --action-cornflower: #7377ff;
+  --action-cornflower-15: #7377ff19;
+  --action-orchid: #db58db;
+  --action-orchid-15: #db58db19;
+  --action-orange: #ff884d;
+  --action-orange-15: #ff884d19;
+  --action-lime: #bbdb1a;
+  --action-lime-15: #bbdb1a19;
+  --action-kiwi: #78e043;
+  --action-kiwi-15: #78e04319;
+  --action-sky: #13cdf2;
+  --action-sky-15: #13cdf219;
+  --action-violet: #8d67e5;
+  --action-violet-15: #8d67e519;
+  --action-pink: #eb54a0;
+  --action-pink-15: #eb54a019;
+  --action-amber: #ffbc36;
+  --action-amber-15: #ffbc3619;
+}
+
+.pallette {
+  color: var(--content-primary);
+  background: var(--surface-primary);
+}

@@ -7,8 +7,22 @@ const config = {
   h6: 'h6',
   p: 'p',
   span: 'span',
+  i: 'i',
+  b: 'b',
+  u: 'u',
+  q: 'q',
   label: 'label',
-  div: 'div'
+  main: 'main',
+  section: 'section',
+  article: 'article',
+  aside: 'aside',
+  header: 'header',
+  footer: 'footer',
+  nav: 'nav',
+  div: 'div',
+  ul: 'ul',
+  ol: 'ol',
+  li: 'li'
 }
 
 const getWrapperTag = (target) => {
