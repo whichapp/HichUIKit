@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script>
+const convertTz = (str) => {
+  const timezoneOffset = new Date().getTimezoneOffset();
+  const date = new Date(str)
+  const timestamp = date.getTime();
+  const convertedTimestamp = timestamp + (-1 * timezoneOffset * 60 * 1000)
+
+  const convertedTime = new Date(convertedTimestamp)
+
+  return convertedTime
+}
+
+const rankup = [{created_at:  "2024-06-26 22:23:48"}]
+
+console.log(rankup[0].created_at);
+console.log(convertTz(rankup[0].created_at));
+console.log(moment(convertTz(rankup[0].created_at)).format("ddd, MMM DD, YYYY - HH:mm"));
+
+
+        // console.log(timezoneOffset);
+        // console.log(backendDate);
+        // console.log(date);
+        // console.log(moment(date).format("ddd, MMM DD, YYYY - HH:mm"));
+        // console.log(timestamp);
+        // console.log(convertedTimestamp);
+        // console.log(convertedTime);
+        // console.log(moment(convertedTime).format("ddd, MMM DD, YYYY - HH:mm"));
+    </script>
+</body>
+</html>

@@ -1,18 +1,154 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import 'hich-ui-kit/dist/index.css'
-import { Typography, ThemePallete, HichSwitch } from 'hich-ui-kit'
+import {
+  Typography,
+  ThemePallete,
+  HichSwitch,
+  ButtonBrand,
+  ButtonPrimary,
+  ButtonSubtle,
+  ButtonPlain,
+  ButtonPlainSecondary,
+  ButtonOutlined
+} from 'hich-ui-kit'
 
 const App = () => {
+  const [switch1, setSwitch1] = useState(false)
+  const [switch2, setSwitch2] = useState(false)
+
   return (
     <>
       <section style={{ display: 'flex' }}>
-        <ThemePallete wrapper='aside' style={{ flexGrow: '1' }}>
+        <ThemePallete
+          wrapper='aside'
+          style={{ flexGrow: '1', padding: '20px' }}
+        >
           <div>
-            <HichSwitch />
-            <HichSwitch />
-            <HichSwitch />
-            <HichSwitch checked={true}/>
+            <div style={{marginBottom: 10}}>
+              <ButtonBrand size='small'>Small</ButtonBrand>
+              <ButtonBrand size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonBrand>
+              <ButtonBrand size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonBrand>
+              <ButtonBrand disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonBrand>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPrimary size='small'>Small</ButtonPrimary>
+              <ButtonPrimary size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonPrimary>
+              <ButtonPrimary size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPrimary>
+              <ButtonPrimary disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonPrimary>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonSubtle size='small'>Small</ButtonSubtle>
+              <ButtonSubtle size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonSubtle>
+              <ButtonSubtle size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonSubtle>
+              <ButtonSubtle disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonSubtle>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPlain size='small'>Small</ButtonPlain>
+              <ButtonPlain size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonPlain>
+              <ButtonPlain size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPlain>
+              <ButtonPlain disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonPlain>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPlainSecondary size='small'>Small</ButtonPlainSecondary>
+              <ButtonPlainSecondary
+                size='medium'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium(Default)
+              </ButtonPlainSecondary>
+              <ButtonPlainSecondary size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPlainSecondary>
+              <ButtonPlainSecondary
+                disabled={true}
+                style={{ marginLeft: '15px' }}
+              >
+                Medium - Disabled
+              </ButtonPlainSecondary>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonOutlined size='small'>Small</ButtonOutlined>
+              <ButtonOutlined size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonOutlined>
+              <ButtonOutlined size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonOutlined>
+              <ButtonOutlined disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonOutlined>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonOutlined
+                size='small'
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+              >
+                Small
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='medium'
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium(Default)
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='large'
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Large
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='large'
+                iconLeft='plus-normal'
+                style={{ marginLeft: '15px' }}
+              />
+              <ButtonOutlined
+                disabled={true}
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium - Disabled
+              </ButtonOutlined>
+            </div>
+          </div>
+          <div>
+            <HichSwitch
+              checked={switch1}
+              onChange={() => setSwitch1((state) => !state)}
+            />
+            <HichSwitch disabled={true} checked={false} />
+            <HichSwitch disabled={true} checked={true} />
           </div>
           <div>
             <Typography>hte</Typography>
@@ -96,10 +232,136 @@ const App = () => {
             </Typography>
           </div>
         </ThemePallete>
-        <ThemePallete theme='dark' wrapper='aside' style={{ flexGrow: 1 }}>
+        <ThemePallete
+          theme='dark'
+          wrapper='aside'
+          style={{ flexGrow: 1, padding: '20px' }}
+        >
           <div>
-            <HichSwitch />
-            <HichSwitch checked={true}/>
+            <div style={{marginBottom: 10}}>
+              <ButtonBrand size='small'>Small</ButtonBrand>
+              <ButtonBrand size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonBrand>
+              <ButtonBrand size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonBrand>
+              <ButtonBrand disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonBrand>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPrimary size='small'>Small</ButtonPrimary>
+              <ButtonPrimary size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonPrimary>
+              <ButtonPrimary size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPrimary>
+              <ButtonPrimary disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonPrimary>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonSubtle size='small'>Small</ButtonSubtle>
+              <ButtonSubtle size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonSubtle>
+              <ButtonSubtle size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonSubtle>
+              <ButtonSubtle disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonSubtle>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPlain size='small'>Small</ButtonPlain>
+              <ButtonPlain size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonPlain>
+              <ButtonPlain size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPlain>
+              <ButtonPlain disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonPlain>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonPlainSecondary size='small'>Small</ButtonPlainSecondary>
+              <ButtonPlainSecondary
+                size='medium'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium(Default)
+              </ButtonPlainSecondary>
+              <ButtonPlainSecondary size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonPlainSecondary>
+              <ButtonPlainSecondary
+                disabled={true}
+                style={{ marginLeft: '15px' }}
+              >
+                Medium - Disabled
+              </ButtonPlainSecondary>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonOutlined size='small'>Small</ButtonOutlined>
+              <ButtonOutlined size='medium' style={{ marginLeft: '15px' }}>
+                Medium(Default)
+              </ButtonOutlined>
+              <ButtonOutlined size='large' style={{ marginLeft: '15px' }}>
+                Large
+              </ButtonOutlined>
+              <ButtonOutlined disabled={true} style={{ marginLeft: '15px' }}>
+                Medium - Disabled
+              </ButtonOutlined>
+            </div>
+            <div style={{marginBottom: 10}}>
+              <ButtonOutlined
+                size='small'
+                iconLeft='plus-bold'
+                iconRight='arrow-right-normal'
+              >
+                Small
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='medium'
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium(Default)
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='large'
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Large
+              </ButtonOutlined>
+              <ButtonOutlined
+                size='large'
+                iconLeft='plus-normal'
+                style={{ marginLeft: '15px' }}
+              />
+              <ButtonOutlined
+                disabled={true}
+                iconLeft='plus-normal'
+                iconRight='arrow-right-normal'
+                style={{ marginLeft: '15px' }}
+              >
+                Medium - Disabled
+              </ButtonOutlined>
+            </div>
+          </div>
+          <div>
+            <HichSwitch
+              checked={switch2}
+              onChange={() => setSwitch2((state) => !state)}
+            />
+            <HichSwitch disabled={true} checked={false} />
+            <HichSwitch disabled={true} checked={true} />
           </div>
           <div>
             <Typography>hte</Typography>

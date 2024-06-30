@@ -1,0 +1,170 @@
+.btn,
+.btn:after {
+  transition: all 0.2s;
+}
+.btn {
+  --hover-action-opacity: 0;
+  --disabled-text-color: var(--content-disabled);
+  --disabled-border-color: transparent;
+  --disabled-background-color: var(--content-subtle);
+
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  background: transparent;
+  outline: 4px solid transparent;
+  border-radius: 4px;
+  padding: 0;
+  font-weight: 600;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: var(--button-height);
+  font-size: var(--text-size);
+  padding-left: var(--padding-x);
+  padding-right: var(--padding-x);
+}
+.btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background: var(--content-hover);
+  opacity: var(--hover-action-opacity);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* size classes **************/
+.btn-size-large {
+  --button-height: 58px;
+  --text-size: 16px;
+  --padding-x: 17px;
+  --text-padding: 14px;
+  --icon-size: 22px;
+}
+.btn-size-medium {
+  --button-height: 46px;
+  --text-size: 14px;
+  --padding-x: 13px;
+  --text-padding: 10px;
+  --icon-size: 18px;
+}
+.btn-size-small {
+  --button-height: 34px;
+  --text-size: 12px;
+  --padding-x: 9px;
+  --text-padding: 8px;
+  --icon-size: 14px;
+}
+
+/* styles classes *********************/
+.btn-variant-brand {
+  --text-color: var(--content-invert);
+  --border-color: var(--action-green);
+  --background-color: var(--action-green);
+  --hover-text-color: var(--content-invert);
+  --hover-border-color: var(--action-green);
+  --hover-background-color: var(--action-green);
+}
+
+.btn-variant-primary {
+  --text-color: var(--content-invert);
+  --border-color: var(--content-primary);
+  --background-color: var(--content-primary);
+  --hover-text-color: var(--content-invert);
+  --hover-border-color: var(--content-primary);
+  --hover-background-color: var(--content-primary);
+}
+
+.btn-variant-subtle {
+  --text-color: var(--content-primary);
+  --border-color: var(--content-subtle);
+  --background-color: var(--content-subtle);
+  --hover-text-color: var(--content-primary);
+  --hover-border-color: var(--action-green-15);
+  --hover-background-color: var(--content-subtle);
+}
+
+.btn-variant-plain {
+  --text-color: var(--content-primary);
+  --border-color: transparent;
+  --background-color: transparent;
+  --hover-text-color: var(--content-primary);
+  --hover-border-color: var(--action-green-15);
+  --hover-background-color: transparent;
+
+  --disabled-background-color: transparent;
+}
+
+.btn-variant-plain-secondary {
+  --text-color: var(--content-secondary);
+  --border-color: transparent;
+  --background-color: transparent;
+  --hover-text-color: var(--content-primary);
+  --hover-border-color: var(--action-green-15);
+  --hover-background-color: transparent;
+
+  --disabled-background-color: transparent;
+}
+
+.btn-variant-outlined {
+  --text-color: var(--content-secondary);
+  --border-color: var(--surface-border);
+  --background-color: transparent;
+  --hover-text-color: var(--content-primary);
+  --hover-border-color: var(--action-green-15);
+  --hover-background-color: transparent;
+
+  --disabled-border-color: var(--surface-border);
+  --disabled-background-color: transparent;
+}
+
+.btn > span{
+  padding: 0 var(--text-padding);
+}
+
+.btn .button-icon {
+  font-size: var(--icon-size);
+}
+
+/* icons interactions *********************/
+
+.btn:disabled {
+  color: var(--disabled-text-color);
+  border: 1px solid var(--disabled-border-color);
+  background: var(--disabled-background-color);
+  cursor: not-allowed;
+}
+.btn:not(:disabled) {
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+}
+.btn:not(:disabled):hover {
+  color: var(--hover-text-color);
+  border: 1px solid var(--hover-border-color);
+  background: var(--hover-background-color);
+  --hover-action-opacity: 1;
+}
+.btn:not(:disabled):active {
+  outline: 4px solid var(--action-green-15);
+  --hover-action-opacity: 0;
+}
+
+.button-icon {
+  font-family: 'hichIconsFont';
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

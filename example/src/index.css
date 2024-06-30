@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'hichIconsFont';
+  src: url('../../src/fonts/hichiconsfont.eot');
+  src: url('../../src/fonts/hichiconsfont.eot') format('embedded-opentype'),
+       url('../../src/fonts/hichiconsfont.woff') format('woff'),
+       url('../../src/fonts/hichiconsfont.ttf') format('truetype'),
+       url('../../src/fonts/hichiconsfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,3 +23,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
